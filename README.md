@@ -21,6 +21,11 @@ Tech-Stack
 - Lombok  
 - JUnit 5 & Mockito  
 - Swagger (OpenAPI 3)
+  
+ Database Integration
+
+This project uses PostgreSQL for persistent data storage. Each entity (User, Trainer, Manager, Membership, GymClass) is mapped to its own table using Spring Data JPA. Relationships are handled directly through entity associations — for example, memberships link users and gym classes through foreign keys.
+I use DBeaver to visualize and manage the database.
 
 Project Structure
 
