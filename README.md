@@ -48,10 +48,10 @@ How to Run my Application
 
 bash
 mvn clean install
-Run it
+3. Run it
 mvn spring-boot:run
 
-3. Open your browser and go to:
+4. Open your browser and go to:
 http://localhost:8080/swagger-ui/index.html
 
  Testing my Application
