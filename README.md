@@ -7,7 +7,7 @@ What It Does
 
 - Create, read, update, and delete gym classes, users, trainers, managers, and memberships;  
 - Uses DTOs and Mappers (MapStruct) to keep data clean between layers;
-- Has services, repositories, and controllers for each entity;  
+- Has services, repositories, and controllers for each entity;
 - Includes Swagger for documentation;  
 - Tested with **JUnit 5** and **Mockito**
 
