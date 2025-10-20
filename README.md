@@ -3,7 +3,7 @@ Gym Management Application
 This is a **Spring Boot project** I built to practice backend development and learn how real-world applications are structured.  
 It’s a REST API for managing a gym — with users, trainers, managers, memberships, and gym classes.
 
-## 💡 What It Does
+What It Does
 
 - Create, read, update, and delete gym classes, users, trainers, managers, and memberships;  
 - Uses DTOs and Mappers (MapStruct) to keep data clean between layers;
