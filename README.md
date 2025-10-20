@@ -41,8 +41,8 @@ How to Run my Application
 
 1. Clone the project  
    bash
-   git clone https://github.com/yourusername/gym-management.git
-   cd gym-management
+   git clone https://github.com/MarcOnAMission/GymManagement.git
+   cd GymManagement
    
 2. Build it with Maven:
 
