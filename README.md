@@ -24,17 +24,17 @@ Tech-Stack
 
 Project Structure
 
-src/
-main/java/GymManagement/GymManagement/
-Controllers/
-   DTOs/
-   Mappers/
-   Model/
-   Repositories/
-   Services/
- test/java/GymManagement/GymManagement/
-    Controllers/
-    Services/
+|src/
+-main/java/GymManagement/GymManagement/
+--Controllers/
+   -DTOs/
+   -Mappers/
+   -Model/
+   -Repositories/
+   -Services/
+ --test/java/GymManagement/GymManagement/
+    -Controllers/
+    -Services/
 
 
 How to Run my Application
