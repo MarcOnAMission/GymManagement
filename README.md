@@ -79,9 +79,9 @@ json
   "name": "8 Hour Arm Workout",
   "date": "30.05.2026 14:30"
 }
-Author
-Marc
+## Author
+## Popovici Marc Mihai
 The Most Pragmatic Aspiring Java Developer
-Learning Spring Boot, clean architecture, and testing.
+Learning Spring Boot while developing myself along the way.
 
 “A slack cable can carry nothing, but one under tension can haul mountains.”
