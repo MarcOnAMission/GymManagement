@@ -1,9 +1,9 @@
-Gym Management Application
+##Gym Management Application
 
 This is a **Spring Boot project** I built to practice backend development and learn how real-world applications are structured.  
 It’s a REST API for managing a gym — with users, trainers, managers, memberships, and gym classes.
 
-What It Does
+##What It Does
 
 - Create, read, update, and delete gym classes, users, trainers, managers, and memberships;  
 - Uses DTOs and Mappers (MapStruct) to keep data clean between layers;
@@ -11,7 +11,7 @@ What It Does
 - Includes Swagger for documentation;  
 - Tested with **JUnit 5** and **Mockito**
 
-Tech-Stack
+##Tech-Stack
 
 - Java 17  
 - Spring Boot  
@@ -22,12 +22,12 @@ Tech-Stack
 - JUnit 5 & Mockito  
 - Swagger (OpenAPI 3)
   
- Database Integration
+## Database Integration
 
 This project uses PostgreSQL for persistent data storage. Each entity (User, Trainer, Manager, Membership, GymClass) is mapped to its own table using Spring Data JPA. Relationships are handled directly through entity associations — for example, memberships link users and gym classes through foreign keys.
 I use DBeaver to visualize and manage the database.
 
-Project Structure
+##Project Structure
 
 src/
 ├── main/java/GymManagement/GymManagement/
@@ -42,7 +42,7 @@ src/
 └── Services/
 
 
-How to Run my Application
+##How to Run my Application
 
 1. Clone the project  
    bash
@@ -59,7 +59,7 @@ mvn spring-boot:run
 4. Open your browser and go to:
 http://localhost:8080/swagger-ui/index.html
 
- Testing my Application
+## Testing my Application
  
 All services and controllers have unit tests.
 Tests use Mockito to mock dependencies and JUnit 5 to verify behavior.
@@ -85,7 +85,7 @@ json
   "date": "30.05.2026 14:30"
 }
 ## Author
-## Popovici Marc Mihai
+ Popovici Marc Mihai
 The Most Pragmatic Aspiring Java Developer
 Learning Spring Boot while developing myself along the way.
 
