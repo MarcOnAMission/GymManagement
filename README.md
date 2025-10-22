@@ -1,9 +1,9 @@
-##Gym Management Application
+## Gym Management Application
 
 This is a **Spring Boot project** I built to practice backend development and learn how real-world applications are structured.  
 It’s a REST API for managing a gym — with users, trainers, managers, memberships, and gym classes.
 
-##What It Does
+## What It Does
 
 - Create, read, update, and delete gym classes, users, trainers, managers, and memberships;  
 - Uses DTOs and Mappers (MapStruct) to keep data clean between layers;
@@ -11,7 +11,7 @@ It’s a REST API for managing a gym — with users, trainers, managers, members
 - Includes Swagger for documentation;  
 - Tested with **JUnit 5** and **Mockito**
 
-##Tech-Stack
+## Tech-Stack
 
 - Java 17  
 - Spring Boot  
@@ -27,7 +27,7 @@ It’s a REST API for managing a gym — with users, trainers, managers, members
 This project uses PostgreSQL for persistent data storage. Each entity (User, Trainer, Manager, Membership, GymClass) is mapped to its own table using Spring Data JPA. Relationships are handled directly through entity associations — for example, memberships link users and gym classes through foreign keys.
 I use DBeaver to visualize and manage the database.
 
-##Project Structure
+## Project Structure
 
 src/
 ├── main/java/GymManagement/GymManagement/
@@ -42,7 +42,7 @@ src/
 └── Services/
 
 
-##How to Run my Application
+## How to Run my Application
 
 1. Clone the project  
    bash
