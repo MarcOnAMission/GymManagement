@@ -93,8 +93,9 @@ public class UserService {
     public UserDTO findByName(String name){
         return mapper.toDTO(users.findByName(name).orElseThrow(()->new RuntimeException("User by Name not found.")));
     }
-    public UserDTO findBySubscriptionStatus(boolean status){
-        return mapper.toDTO(users.findBySubscriptionStatus(status).orElseThrow(()->new RuntimeException("User with subscription status not found")));
+    public List<UserDTO> findBySubscriptionStatus(boolean status){
+
+        return users.findBySubscriptionStatus(status).stream().map(mapper::toDTO).toList();
     }
     public List<GymClassDTO> getAllClassesForUserId(Long id){
         User u = users.findById(id).orElseThrow(()->new RuntimeException("User not found"));

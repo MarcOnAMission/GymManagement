@@ -68,7 +68,7 @@ public class UserController {
 
     @Operation(summary = "Get user by subscription status", description = "Finds users by their subscription status.")
     @GetMapping("/users/by-subscription")
-    public ResponseEntity<UserDTO> getBySubscription(@RequestParam boolean status) {
+    public ResponseEntity<List<UserDTO>> getBySubscription(@RequestParam boolean status) {
         return ResponseEntity.ok(userService.findBySubscriptionStatus(status));
     }
 

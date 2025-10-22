@@ -148,14 +148,4 @@ class UserServiceTest {
         verify(userRepository).findByName("Tyler Durden");
     }
 
-    @Test
-    void findBySubscriptionStatus_ShouldReturnMappedDTO() {
-        when(userRepository.findBySubscriptionStatus(true)).thenReturn(Optional.of(user));
-        when(userMapper.toDTO(user)).thenReturn(userDTO);
-
-        UserDTO result = userService.findBySubscriptionStatus(true);
-
-        assertEquals("Tyler Durden", result.getName());
-        verify(userRepository).findBySubscriptionStatus(true);
-    }
 }

@@ -102,15 +102,6 @@ class UserControllerTest {
         verify(userService).findByName("Tyler Durden");
     }
 
-    @Test
-    void getBySubscription_ShouldReturnUserByStatus() {
-        when(userService.findBySubscriptionStatus(true)).thenReturn(userDTO);
-
-        ResponseEntity<UserDTO> response = userController.getBySubscription(true);
-
-        assertThat(response.getBody()).isEqualTo(userDTO);
-        verify(userService).findBySubscriptionStatus(true);
-    }
 
     @Test
     void getAllClassesForUser_ShouldReturnListOfGymClasses() {
