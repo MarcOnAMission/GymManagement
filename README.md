@@ -1,2 +1,92 @@
-# GymManagement
-A simple application that allows the operator to register new users, managers, trainers, create new memberships and schedule classes. Also it allows for registering users/trainers to said classes.
+Gym Management Application
+
+This is a **Spring Boot project** I built to practice backend development and learn how real-world applications are structured.  
+It’s a REST API for managing a gym — with users, trainers, managers, memberships, and gym classes.
+
+What It Does
+
+- Create, read, update, and delete gym classes, users, trainers, managers, and memberships;  
+- Uses DTOs and Mappers (MapStruct) to keep data clean between layers;
+- Has services, repositories, and controllers for each entity;
+- Includes Swagger for documentation;  
+- Tested with **JUnit 5** and **Mockito**
+
+Tech-Stack
+
+- Java 17  
+- Spring Boot  
+- Spring Data JPA  
+- MapStruct  
+- Maven  
+- Lombok  
+- JUnit 5 & Mockito  
+- Swagger (OpenAPI 3)
+  
+ Database Integration
+
+This project uses PostgreSQL for persistent data storage. Each entity (User, Trainer, Manager, Membership, GymClass) is mapped to its own table using Spring Data JPA. Relationships are handled directly through entity associations — for example, memberships link users and gym classes through foreign keys.
+I use DBeaver to visualize and manage the database.
+
+Project Structure
+
+src/
+├── main/java/GymManagement/GymManagement/
+│ ├── Controllers/
+│ ├── DTOs/
+│ ├── Mappers/
+│ ├── Model/
+│ ├── Repositories/
+│ └── Services/
+└── test/java/GymManagement/GymManagement/
+├── Controllers/
+└── Services/
+
+
+How to Run my Application
+
+1. Clone the project  
+   bash
+   git clone https://github.com/MarcOnAMission/GymManagement.git
+   cd GymManagement
+   
+2. Build it with Maven:
+
+bash
+mvn clean install
+3. Run it
+mvn spring-boot:run
+
+4. Open your browser and go to:
+http://localhost:8080/swagger-ui/index.html
+
+ Testing my Application
+ 
+All services and controllers have unit tests.
+Tests use Mockito to mock dependencies and JUnit 5 to verify behavior.
+
+Each test class has a setup method that runs before every test.
+
+Example naming style:
+methodName_ShouldDoSomething_WhenCondition()
+Example API (Gym Class)
+
+POST /api/gym_management/gymclasses
+
+json
+{
+  "name": "8 Hour Arm Workout",
+  "date": "30.05.2026 14:30"
+}
+Response:
+json
+{
+  "id": 1,
+  "name": "8 Hour Arm Workout",
+  "date": "30.05.2026 14:30"
+}
+## Author
+## Popovici Marc Mihai
+The Most Pragmatic Aspiring Java Developer
+Learning Spring Boot while developing myself along the way.
+
+“A slack cable can carry nothing, but one under tension can haul mountains.”
